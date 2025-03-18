@@ -20,6 +20,7 @@ from tensorboardX import SummaryWriter
 
 from dataset.data import BSDataset
 from baseline.BS_Mamba import BS_Mamba
+from baseline.mamba_unet import MambaUnet
 from DiceLoss import DiceLoss,IouLoss
 from util.evaluate import evaluate_add
 from util.utils import count_params, init_log

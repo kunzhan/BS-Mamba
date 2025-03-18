@@ -4,7 +4,7 @@ Extremely degraded grassland on the Qinghai-Tibetan Plateau (QTP) presents a sig
 ![framework](assets/figure_02.jpg)
 
 # Experiment
-## QTH-BS datatset
+## QTP-BS datatset
 
 [Download link](https://drive.google.com/file/d/1x91CinTrJd08omRcuY4ZMm7XPn1yWFzZ/view?usp=sharing)
 

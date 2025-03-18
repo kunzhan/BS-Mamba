@@ -21,7 +21,8 @@ from tensorboardX import SummaryWriter
 from dataset.data import BSDataset
 from baseline.BS_Mamba import BS_Mamba
 # from baseline.mamba_unet import MambaUnet
-# from baseline.unet import Unet
+# from baseline.unet import UNet
+# from baseline.local_vmamba import UPerNet
 from DiceLoss import DiceLoss,IouLoss
 from util.evaluate import evaluate_add
 from util.utils import count_params, init_log
@@ -53,7 +54,7 @@ def main():
     os.environ["CUDA_VISIBLE_DEVICES"] = str(args.gpu)
 
     cfg = yaml.load(open(args.config, "r"), Loader=yaml.Loader)
-    model_name = 'BS_Mamba'
+    model_name = 'BS_Mamba'# UNet\MambaUnet\...
 
     results_file = args.save_path  + "results_{}.txt".format(datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
     
@@ -71,7 +72,8 @@ def main():
     init_seeds(0, False)
 
     model =BS_Mamba()
-
+#   model = UNet()
+#   model = MambaUnet()
     params_to_optimize = [p for p in model.parameters() if p.requires_grad]
     optimizer = torch.optim.Adam(  
         params_to_optimize, 

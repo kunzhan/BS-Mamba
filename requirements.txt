@@ -1,0 +1,12 @@
+causal-conv1d==1.2.0.post2
+cuda-nvcc==11.8.89
+cudatoolkit==11.8.0
+einops==0.7.0
+fvcore==0.1.5.post20221221
+mamba-ssm==1.2.0.post1
+mpmath==1.3.0
+ninja==1.11.1.1
+numpy==1.26.4
+numpy-base==1.26.4
+opencv-python==4.9.0.80
+pillow==10.

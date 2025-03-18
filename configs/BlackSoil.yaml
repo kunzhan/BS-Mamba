@@ -1,0 +1,25 @@
+# arguments for dataset
+dataset: grassset
+nclass: 2
+crop_size: 384
+data_root: grassset2
+
+# arguments for training
+epochs: 60
+batch_size: 8
+lr: 0.0002  # 4GPUs
+lr_multi: 10.0
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: -100
+thresh_init: 0.85
+
+# arguments for model
+model: BS_Mamba
+backbone: BS_Mamba
+pretrain: True
+multi_grid: False
+replace_stride_with_dilation: [False, True, True]
+# dilations: [6, 12, 18]
+dilations: [12, 24, 36]

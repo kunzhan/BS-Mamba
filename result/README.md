@@ -3,12 +3,12 @@ Extremely degraded grassland on the Qinghai-Tibetan Plateau (QTP) presents a sig
 
 
 # Experiment
-## Train BS-QTP dataset
+## Train QTP-BS dataset
 ```sh
 python train.py
 ```
 
-## Test two datasets
+## Two test sets
 ```sh
 python test.py
 ```

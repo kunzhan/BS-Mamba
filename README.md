@@ -13,7 +13,7 @@ Extremely degraded grassland on the Qinghai-Tibetan Plateau (QTP) presents a sig
 python train.py
 ```
 
-## Test two datasets
+## two test sets
 ```sh
 python test.py
 ```

@@ -6,7 +6,8 @@ import numpy as np
 from PIL import Image
 import yaml
 import argparse
-from baseline.gdnet import gdnet
+from baseline.BS_Mamba import BS_Mamba
+# from baseline.gdnet import gdnet
 
 
 
@@ -54,7 +55,7 @@ class ImagePredictor:
         print("using {} device.".format(device))
 
         # create model
-        model = gdnet()
+        model = BS_Mamba()
 
 
         # load weights
